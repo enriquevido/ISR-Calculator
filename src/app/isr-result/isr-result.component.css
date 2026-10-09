@@ -1,0 +1,13 @@
+section {
+  margin-block: 20px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 16px;
+  }
+}

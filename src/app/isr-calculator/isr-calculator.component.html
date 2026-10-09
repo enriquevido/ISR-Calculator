@@ -1,0 +1,30 @@
+<h1>Calculadora de ISR mensual 2026</h1>
+
+<form>
+  <label for="ingreso">Ingreso mensual gravable</label>
+  <input #ingreso id="ingreso" type="number" min="0" step="0.01" />
+
+  <label for="mes">Mes</label>
+  <select #mes id="mes">
+    <option value="1">Enero</option>
+    <option value="2">Febrero</option>
+    <option value="3">Marzo</option>
+    <option value="4">Abril</option>
+    <option value="5">Mayo</option>
+    <option value="6">Junio</option>
+    <option value="7">Julio</option>
+    <option value="8">Agosto</option>
+    <option value="9">Septiembre</option>
+    <option value="10">Octubre</option>
+    <option value="11">Noviembre</option>
+    <option value="12">Diciembre</option>
+  </select>
+
+  <button type="button" (click)="calcular(ingreso.valueAsNumber, mes.value)">
+    Calcular ISR
+  </button>
+</form>
+@if (resultado(); as calculo) {
+  <app-isr-result [resultado]="calculo"></app-isr-result>
+}
+<app-isr-tariff></app-isr-tariff>

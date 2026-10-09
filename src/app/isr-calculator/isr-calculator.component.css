@@ -1,0 +1,33 @@
+form {
+  display: grid;
+  gap: 12px;
+  margin-block: 20px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+
+input, select, button {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #1e40af;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e3a8a;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 16px;
+  }
+}

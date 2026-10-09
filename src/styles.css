@@ -1,69 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 24px;
-    background: #f3f6fa;
-    color: #1e293b;
-    font-family: Arial, sans-serif;
-}
-
-app-root {
-    display: block;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-form, section {
-    margin-block: 20px;
-    padding: 24px;
-    background: white;
-    border-radius: 12px;
-}
-
-form {
-    display: grid;
-    gap: 12px
-}
-
-input, select, button {
-    width: 100%;
-    min-width: 0;
-    padding: 12px;
-    font: inherit;
-}
-
-button {
-    border: 0;
-    border-radius: 6px;
-    background: #1e40af;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #1e3a8a;
-}
-
-section {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #cbd5e1;
-    text-align: left;
+  margin: 0;
+  padding: 24px;
+  background: #f3f6fa;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 600px) {
-    body {padding: 12px;}
-    form, section {padding: 16px;}
+  body {
+    padding: 12px;
+  }
 }
